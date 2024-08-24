@@ -67,10 +67,6 @@ root/
   curl -fsSL https://bun.sh/install | bash
   ```
 
-```
-
-```
-
 - **Redis Upstash Account**: You need an Upstash Redis account. You can sign up here.
 
 ## Getting Started
