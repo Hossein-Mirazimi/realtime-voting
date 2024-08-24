@@ -5,7 +5,7 @@ import { redis } from "@/lib/redis";
 import { Star } from "lucide-react";
 
 export default async function Home() {
-  const servedRequests = await redis.get('served-requests')
+  const servedRequests = await redis.get("served-requests");
 
   return (
     <section className="min-h-screen bg-grid-zinc-50">
@@ -16,12 +16,23 @@ export default async function Home() {
         <div className="px-6 lg:px-0 lg:pt-4">
           <div className="relative mx-auto text-center flex flex-col items-center">
             <h1 className="relative leading-snug w-fit tracking-tight text-balance mt-16 font-bold text-gray-900 text-5xl md:text-6xl">
-              What do you <span className="whitespace-nowrap">th<span className="relative">i<span className="absolute inset-x-0 -top-0.5 -translate-x-2.5"><Icons.brain className="size-7" /></span></span>nk</span> about...
+              What do you&nbsp;
+              <span className="whitespace-nowrap">
+                th
+                <span className="relative">
+                  i
+                  <span className="absolute inset-x-0 -top-px sm:top-0.5 -translate-x-1.5">
+                    <Icons.brain className="size-6" />
+                  </span>
+                </span>
+                nk
+              </span>
+              &nbsp;about...
             </h1>
             <TopicCreator />
             <div className="mt-12 flex flex-col sm:flex-row items-center sm:items-start gap-5">
               <div className="flex flex-col gap-1 justify-between items-center sm:items-start">
-                <div className="flex gap-0.5">
+                <div className="flex gap-0.5 justify-center w-full">
                   <Star className="h-4 w-4 text-green-600 fill-green-600" />
                   <Star className="h-4 w-4 text-green-600 fill-green-600" />
                   <Star className="h-4 w-4 text-green-600 fill-green-600" />
@@ -29,7 +40,10 @@ export default async function Home() {
                   <Star className="h-4 w-4 text-green-600 fill-green-600" />
                 </div>
                 <p>
-                  <span className="font-semibold">{Math.ceil(Number(servedRequests)/ 10) * 10}</span> served requests
+                  <span className="font-semibold">
+                    {Math.ceil(Number(servedRequests) / 10) * 10}
+                  </span>{" "}
+                  served requests
                 </p>
               </div>
             </div>
@@ -37,5 +51,5 @@ export default async function Home() {
         </div>
       </MaxWidthWrapper>
     </section>
-  )
+  );
 }
