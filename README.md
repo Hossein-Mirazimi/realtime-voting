@@ -10,6 +10,17 @@ This is a real-time voting application where users can propose topics and vote o
 - **Separation of Concerns:** The project is structured with two distinct folders:
   - **Client:** Built using Next.js 14 and ShadCN-UI.
   - **Server:** A Node.js Express server that manages the backend API and handles socket communication.
+## Preview
+
+Here are some previews of the Real-Time Voting Application:
+
+### Desktop View
+
+![Desktop View](/screenshots/desktop-preview.png)
+
+### Mobile View
+
+![Mobile View](/screenshots/mobile-preview.png)
 
 ## Project Structure
 
