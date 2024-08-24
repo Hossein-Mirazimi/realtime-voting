@@ -13,7 +13,21 @@ This is a real-time voting application where users can propose topics and vote o
 
 ## Project Structure
 
-root/ ├── client/ │ ├── pages/ │ ├── components/ │ ├── utils/ │ ├── bun.lockb │ ├── package.json │ └── ... └── server/ ├── routes/ ├── controllers/ ├── socket/ ├── bun.lockb ├── package.json └── ...
+````plaintext
+root/
+├── client/
+│   ├── app/
+│   ├── components/
+│   ├── utils/
+│   ├── bun.lockb
+│   ├── package.json
+│   └── ...
+└── server/
+    ├── index.ts
+    ├── bun.lockb
+    ├── package.json
+    └── ...
+
 
 - **`client/`:** This folder contains the frontend part of the application.
 
@@ -51,7 +65,7 @@ root/ ├── client/ │ ├── pages/ │ ├── components/ │ ├�
 
   ```bash
   curl -fsSL https://bun.sh/install | bash
-  ```
+````
 
 - **Redis Upstash Account**: You need an Upstash Redis account. You can sign up here.
 
