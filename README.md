@@ -159,7 +159,7 @@ Contributing are welcome! Feel free to submit a pull request, or open an issue o
 
 ## License
 
-This project is licensed under MIT License - see the [LICENSE]() file for details.
+This project is licensed under MIT License - see the [LICENSE](https://github.com/Hossein-Mirazimi/realtime-voting?tab=MIT-1-ov-file) file for details.
 
 ## Acknowledgments
 
